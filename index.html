@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="ceu" src="/assets/textures/Ceu.jpg" />
+        <img id="wall" src="/assets/textures/wall_texture.jpg" />
+        <a-assets-item
+          id="table"
+          src="/assets/models/table.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="grass"
+          src="/assets/textures/relva1.jpg"
+        ></a-assets-item>
+        <a-assets-item
+          id="xadrez"
+          src="/assets/models/xadrez.glb"
+        ></a-assets-item>
+        <a-assets-item id="tree" src="/assets/models/tree.glb"></a-assets-item>
+        <a-assets-item
+          id="board"
+          src="/assets/models/board.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="boardGame2"
+          src="/assets/models/boardGame_1.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="bridge"
+          src="/assets/models/bridge.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="trashCan"
+          src="/assets/models/trashCan.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="gamingTable"
+          src="/assets/models/gamingTable.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="gamingChair"
+          src="/assets/models/gaming_chair.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="inTable"
+          src="assets/models/intable.glb"
+        ></a-assets-item>
+        <a-assets-item id="bar" src="assets/models/bar.glb"></a-assets-item>
+        <a-assets-item
+          id="sodaMachine"
+          src="/assets/models/sodaMachine.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="arcadeMachine"
+          src="/assets/models/arcadeMachine.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="arcadePacMachine"
+          src="assets/models/pacman_arcade_machine.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="arcade_Machine"
+          src="assets/models/arcade2.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="swinger"
+          src="assets/models/swing.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="table_school"
+          src="assets/models/classroom_desk.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="door_classroom"
+          src="assets/models/door_classroom.glb"
+        ></a-assets-item>
+      </a-assets>
+
+      <!-- Camara -->
+      <a-camera position="0 2.5 0"></a-camera>
+
+      <!-- Ceu  -->
+      <a-sky src="#ceu"></a-sky>
+
+      <!-- Mesas -->
+      <a-entity gltf-model="#table" position="0 0 0" scale="2 2 2"></a-entity>
+      <a-entity gltf-model="#table" position="0 0 -8" scale="2 2 2"></a-entity>
+      <a-entity gltf-model="#table" position="7 0 0" scale="2 2 2"></a-entity>
+      <a-entity gltf-model="#table" position="7 0 -8" scale="2 2 2"></a-entity>
+      <a-entity gltf-model="#table" position="-7 0 0" scale="2 2 2"></a-entity>
+      <a-entity gltf-model="#table" position="-7 0 -8" scale="2 2 2"></a-entity>
+
+      <!-- Arvores  -->
+      <a-entity
+        gltf-model="#tree"
+        position="-3.943 0 1"
+        scale="12 12 12"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree"
+        position="3.5 0 1"
+        scale="15 15 15"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree"
+        position="-3.943 0 -8"
+        scale="11 11 11"
+      ></a-entity>
+      <a-entity
+        gltf-model="#tree"
+        position="3.5 0 -8"
+        scale="13 13 13"
+      ></a-entity>
+
+      <!-- Caixote do lixo-->
+      <a-entity
+        gltf-model="#trashCan"
+        position="0 0 -3.5"
+        scale="0.1 0.1 0.1"
+      ></a-entity>
+
+      <!-- Board Games-->
+      <a-entity
+        gltf-model="#xadrez"
+        position="-0.219 1.502 0"
+        scale="0.006 0.006 0.006"
+      ></a-entity>
+      <a-entity
+        gltf-model="#board"
+        position="-7. 1.502 -0.2"
+        scale="0.02 0.02 0.02"
+      ></a-entity>
+      <a-entity
+        gltf-model="#boardGame2"
+        position="7 1.502 -0.2"
+        scale="0.02 0.02 0.02"
+      ></a-entity>
+
+      <!-- Swing-->
+      <a-entity
+        gltf-model="#swinger"
+        position="1 0 -17"
+        scale="2 2 2"
+      ></a-entity>
+
+      <!-- Relva -->
+      <a-plane
+        position="0 0 0"
+        rotation="-90 50 0"
+        width="100"
+        height="100"
+        src="#grass"
+        repeat="50 50"
+      ></a-plane>
+
+      <!-- Sala de Jogos -->
+      <!-- Parede de tras -->
+      <a-box
+        position="-18.3 2.5 -10"
+        width="15"
+        height="5"
+        depth="0.2"
+        src="#wall"
+        repeat="2 2"
+      ></a-box>
+      <!-- Parede esquerda  -->
+      <a-box
+        position="-25.9 2.5 -2.5"
+        width="0.2"
+        height="5"
+        depth="15"
+        src="#wall"
+        repeat="2 2"
+      ></a-box>
+      <!-- Parede Direita -->
+      <a-box
+        position="-10.9 2.5 -2.5"
+        width="0.2"
+        height="5"
+        depth="15"
+        src="#wall"
+        repeat="2 2"
+      ></a-box>
+      <!-- Parede da frente dir  -->
+      <a-box
+        position="-23.3 2.5 4.9"
+        width="5"
+        height="5"
+        depth="0.2"
+        src="#wall"
+        repeat="2 2"
+      ></a-box>
+      <!-- Parede da frente esq  -->
+      <a-box
+        position="-13.3 2.5 4.9"
+        width="5"
+        height="5"
+        depth="0.2"
+        src="#wall"
+        repeat="2 2"
+      ></a-box>
+      <!-- Parede da frente top  -->
+      <a-box
+        position="-18.3 4 4.9"
+        width="5"
+        height="2"
+        depth="0.2"
+        src="#wall"
+        repeat="1 1"
+      ></a-box>
+      <a-plane
+        position="-18.3 0.1 -2.5"
+        rotation="-90 0 0"
+        width="15"
+        height="15"
+        color="#330D0D"
+      ></a-plane>
+      <!-- Teto  -->
+      <a-box
+        position="-18.3 5 -2.5"
+        rotation="-90 0 0"
+        width="14.5"
+        height="14.5"
+        depth="0.2"
+        color="#a6a6a6"
+      ></a-box>
+
+      <!-- Portas da sala start -->
+      <a-entity
+        gltf-model="#door_classroom"
+        position="-17 0.5 5"
+        scale="1 1 1"
+        rotation="0 0 0"
+      ></a-entity>
+      <!-- Quadro da sala end -->
+
+      <!-- Mesas da sala -->
+      <a-entity
+        gltf-model="#table_school"
+        position="-14 0.5 -6.6"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#table_school"
+        position="-14 0.5 -8.5"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#table_school"
+        position="-16 0.5 -6.6"
+        rotation="0 90 0"
+        scale="1 1 1"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#table_school"
+        position="-16 0.5 -8.5"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#table_school"
+        position="-18 0.5 -6.6"
+        rotation="0 90 0"
+        scale="1 1 1"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#table_school"
+        position="-18 0.5 -8.5"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#table_school"
+        position="-20 0.5 -8.5"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#table_school"
+        position="-20 0.5 -6.6"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#table_school"
+        position="-22 0.5 -6.6"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#table_school"
+        position="-22 0.5 -8.5"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-entity>
+
+      <!-- Mesas sem computadores e cadeiras -->
+
+      <a-entity
+        gltf-model="#inTable"
+        position="-22.5 0.1 -4.5"
+        scale="1 1 1"
+      ></a-entity>
+      <a-entity
+        gltf-model="#gamingChair"
+        position="-23.3 0.1 -5"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#gamingChair"
+        position="-23.3 0.1 -4"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#inTable"
+        position="-21 0.1 -4.5"
+        scale="1 1 1"
+        rotation="0 180 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#gamingChair"
+        position="-20.2 0.1 -5"
+        scale="1 1 1"
+        rotation="0 -90 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#gamingChair"
+        position="-20.2 0.1 -4"
+        scale="1 1 1"
+        rotation="0 -90 0"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#inTable"
+        position="-16.5 0.1 -4.5"
+        scale="1 1 1"
+      ></a-entity>
+      <a-entity
+        gltf-model="#gamingChair"
+        position="-17.3 0.1 -5"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#gamingChair"
+        position="-17.3 0.1 -4"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#inTable"
+        position="-15 0.1 -4.5"
+        scale="1 1 1"
+        rotation="0 180 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#gamingChair"
+        position="-14.2 0.1 -5"
+        scale="1 1 1"
+        rotation="0 -90 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#gamingChair"
+        position="-14.2 0.1 -4"
+        scale="1 1 1"
+        rotation="0 -90 0"
+      ></a-entity>
+
+      <!-- Bar -->
+      <a-entity
+        gltf-model="#bar"
+        position="-21 0.1 3.2"
+        scale="0.03 0.03 0.03"
+        rotation="0 90 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#sodaMachine"
+        position="-14 0.2 3.9"
+        rotation="0 0 0"
+      ></a-entity>
+
+      <!-- Máquinas de jogo -->
+      <a-entity
+        gltf-model="#arcadeMachine"
+        position="-11.5 0 0"
+        scale="0.5 0.5 0.5"
+        rotation="0 0 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#arcadePacMachine"
+        position="-11.5 0.1 0.8"
+        scale="0.2 0.2 0.2"
+        rotation="0 -90 0"
+        rotation="0 0 0"
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
