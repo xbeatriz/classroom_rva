@@ -79,10 +79,27 @@
           id="door_classroom"
           src="assets/models/door_classroom.glb"
         ></a-assets-item>
+        <a-assets-item
+          id="board_clock"
+          src="assets/models/chalkboard_and_clock.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="table_things"
+          src="assets/models/table_things.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="blackboard"
+          src="assets/models/blackboard.glb"
+        ></a-assets-item>
+        <a-assets-item
+          id="bookshelf"
+          src="assets/models/bookshelf.glb"
+        ></a-assets-item>
+        <a-assets-item id="books" src="assets/models/book.glb"></a-assets-item>
       </a-assets>
 
       <!-- Camara -->
-      <a-camera position="0 2.5 0"></a-camera>
+      <a-camera position="0 1.5 0"></a-camera>
 
       <!-- Ceu  -->
       <a-sky src="#ceu"></a-sky>
@@ -158,7 +175,7 @@
         repeat="50 50"
       ></a-plane>
 
-      <!-- Sala de Jogos -->
+      <!-- Sala de Aula -->
       <!-- Parede de tras -->
       <a-box
         position="-18.3 2.5 -10"
@@ -237,7 +254,16 @@
         scale="2.6 1.5 1"
         rotation="0 0 0"
       ></a-entity>
-      <!-- Quadro da sala end -->
+      <!-- Portas da sala end -->
+
+      <!-- Quadro e relogio da sala start -->
+      <a-entity
+        gltf-model="#blackboard"
+        position="-18 2 -9.8"
+        scale="0.02 0.02 0.02"
+        rotation="0 0 0"
+      ></a-entity>
+      <!-- Quadro e relogio da sala end -->
 
       <!-- Mesas da sala -->
       <a-entity
@@ -246,6 +272,7 @@
         scale="1 1 1"
         rotation="0 90 0"
       ></a-entity>
+
       <a-entity
         gltf-model="#table_school"
         position="-14 0.5 -8.5"
@@ -309,6 +336,20 @@
         rotation="0 90 0"
       ></a-entity>
 
+      <!-- Coisas em cima das mesas da sala -->
+      <a-entity
+        gltf-model="#table_things"
+        position="-14 1.05 -6.6"
+        scale="0.03 0.03 0.03"
+        rotation="0 90 0"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#books"
+        position="-15.7 1 -6.4"
+        scale="0.03 0.03 0.03"
+        rotation="0 90 0"
+      ></a-entity>
       <!-- Mesas sem computadores e cadeiras -->
 
       <a-entity
@@ -396,13 +437,14 @@
         rotation="0 0 0"
       ></a-entity>
 
-      <!-- Máquinas de jogo -->
+      <!-- Bookshelf  -->
       <a-entity
-        gltf-model="#arcadeMachine"
-        position="-11.5 0 0"
+        gltf-model="#bookshelf"
+        position="-11.2 0 0"
         scale="0.5 0.5 0.5"
-        rotation="0 0 0"
+        rotation="0 -90 0"
       ></a-entity>
+
       <a-entity
         gltf-model="#arcadePacMachine"
         position="-11.5 0.1 0.8"
