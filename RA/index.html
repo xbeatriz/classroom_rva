@@ -13,24 +13,13 @@
     <!-- include ar.js for A-Frame -->
 
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-=======
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- include A-Frame obviously -->
 
-  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
-
-  <!-- include ar.js for A-Frame -->
-
-  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
->>>>>>> 79b17d0205316b3cf2e8780a9592181ee80455c0
 </head>
 
 
 <body style='margin : 0px; overflow: hidden;'>
 
-<<<<<<< HEAD
+
     <a-scene embedded arjs>
 
 
@@ -85,65 +74,6 @@
         </a-marker>
 
         <a-entity camera></a-entity>
-=======
-  <a-scene embedded arjs>
-
-    <!-- define your markers -->
-
-    <a-marker preset='custom' type='pattern' url='/RA/pattern-image.png'>
-      <a-entity rotation="-90 0 0">
-
-        <!-- Texto flutuante -->
-        <a-entity position="0 0.95 0"
-          text="value: Eu sou a mascote da Brainiac's; align: center; color: #FFFFFFFF; width: 3">
-        </a-entity>
-
-        <!-- Cabeça -->
-        <a-sphere position="0 0.4 0" radius="0.32" color="#ffcc00"></a-sphere>
-
-        <!-- Olhos -->
-        <a-sphere position="-0.12 0.55 0.3" radius="0.045" color="#ffffff"></a-sphere>
-        <a-sphere position="0.12 0.55 0.3" radius="0.045" color="#ffffff"></a-sphere>
-        <a-sphere position="-0.12 0.55 0.33" radius="0.02" color="#000000"></a-sphere>
-        <a-sphere position="0.12 0.55 0.33" radius="0.02" color="#000000"></a-sphere>
-
-        <!-- Óculos -->
-        <a-ring position="-0.12 0.55 0.31" radius-inner="0.045" radius-outer="0.06" color="#000000"></a-ring>
-        <a-ring position="0.12 0.55 0.31" radius-inner="0.045" radius-outer="0.06" color="#000000"></a-ring>
-        <a-box position="0 0.55 0.31" depth="0.01" height="0.005" width="0.24" color="#000000"></a-box>
-
-        <!-- Dentes -->
-        <a-box position="-0.035 0.32 0.34" depth="0.01" height="0.03" width="0.025" color="#ffffff"></a-box>
-        <a-box position="0.035 0.32 0.34" depth="0.01" height="0.03" width="0.025" color="#ffffff"></a-box>
-
-        <!-- Chapéu -->
-        <a-cylinder position="0 0.67 0" radius="0.19" height="0.08" color="#3333ff"></a-cylinder>
-        <a-box position="0 0.63 0.22" depth="0.06" height="0.01" width="0.22" color="#3333ff"></a-box>
-
-        <!-- Corpo -->
-        <a-cylinder position="0 0.0 0" radius="0.22" height="0.4" color="#3366ff"></a-cylinder>
-
-        <!-- Braço esquerdo normal -->
-        <a-box position="-0.27 0.05 0" depth="0.1" height="0.1" width="0.1" color="#ffcc00"></a-box>
-
-        <!-- Braço direito com animação (acenar) -->
-        <a-box id="rightArm" position="0.27 0.05 0" depth="0.1" height="0.1" width="0.1" color="#ffcc00">
-        </a-box>
-
-        <!-- livro nas mãos (em frente ao corpo) -->
-        <a-box position="0 -0.05 0.25" depth="0.02" height="0.2" width="0.3" color="#888888"></a-box>
-
-        <!-- Pernas -->
-        <a-box position="-0.08 -0.25 0" depth="0.1" height="0.2" width="0.08" color="#000000"></a-box>
-        <a-box position="0.08 -0.25 0" depth="0.1" height="0.2" width="0.08" color="#000000"></a-box>
-
-      </a-entity>
-    </a-marker>
-
-    <!-- define a simple camera -->
-
-    <a-entity camera></a-entity>
->>>>>>> 79b17d0205316b3cf2e8780a9592181ee80455c0
 
 </body>
 
