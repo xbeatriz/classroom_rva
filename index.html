@@ -152,7 +152,14 @@
     <!-- Bar e jogos end -->
 
     <!-- Person start -->
-    <a-entity gltf-model="#person" position="-15 0.2 9" scale="0.7 0.7 0.7" rotation="0 0 0"></a-entity>
+<a-entity 
+  gltf-model="#person" 
+  animation-mixer 
+  position="-15 0.2 9" 
+  scale="0.7 0.7 0.7" 
+  rotation="0 0 0"
+  animation="property: position; to: -10 0.2 9; dur: 4000; easing: linear; loop: true">
+</a-entity>
     <!-- Person end -->
 
 
